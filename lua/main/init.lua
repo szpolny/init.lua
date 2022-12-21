@@ -5,8 +5,13 @@ require("main.colorscheme")
 require("main.treesitter")
 require("main.masonlsp")
 require("main.nvimtree")
-require("main.lualine")
 require("main.comment")
+
+require('lualine').setup({
+    options = {
+        theme = 'rose-pine'
+    }
+})
 
 -- nvim-cmp supports additional completion capabilities
 local capabilities = vim.lsp.protocol.make_client_capabilities()
